@@ -1,0 +1,22 @@
+server:
+  port: 8088
+  servlet:
+    context-path: /
+
+logging:
+  level:
+    com.example: debug
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/pigxx
+    username: root
+    password: 123456
+    type: com.zaxxer.hikari.HikariDataSource
+
+mybatis:
+  #  通用mapper自动开启驼峰
+  #  configuration:
+  #    map-underscore-to-camel-case: true
+  type-aliases-package: com.example.demo.pojo
+#  mapper-locations: mapper/*.xml
