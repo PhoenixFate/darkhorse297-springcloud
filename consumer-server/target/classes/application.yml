@@ -1,0 +1,22 @@
+server:
+  port: 8082
+  servlet:
+    context-path: /
+
+logging:
+  level:
+    com.example: debug
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/pigxx
+    username: root
+    password: 123456
+  application:
+    name: consumer-server
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:10086/eureka
