@@ -22,3 +22,7 @@ eureka:
       defaultZone: http://127.0.0.1:10086/eureka
 #      发现服务的时长间隔
     registry-fetch-interval-seconds: 30
+
+user-service:
+  ribbon:
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
