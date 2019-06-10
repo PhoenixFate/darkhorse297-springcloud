@@ -3,10 +3,13 @@ server:
 
 eureka:
   client:
-#    service-url:
-#      defaultZone: http://127.0.0.1:10086/eureka
+    service-url:
+      defaultZone: http://127.0.0.1:10086/eureka
 #      是否注册到eureka中
     register-with-eureka: false
+  server:
+#    多少秒之后剔除没有回应的服务  失效剔除
+    eviction-interval-timer-in-ms: 60000
 spring:
   application:
     name: eureka-server

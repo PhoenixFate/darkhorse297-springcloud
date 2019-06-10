@@ -26,3 +26,13 @@ eureka:
 user-service:
   ribbon:
     NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
+
+
+hystrix:
+  command:
+    default:
+      execution:
+       isolation:
+        thread:
+         timeoutInMilliseconds: 6000
+

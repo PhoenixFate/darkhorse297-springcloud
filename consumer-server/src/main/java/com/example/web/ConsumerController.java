@@ -1,10 +1,12 @@
 package com.example.web;
 
 import com.example.pojo.User;
+import com.netflix.hystrix.contrib.javanica.annotation.DefaultProperties;
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixProperty;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
-import org.springframework.cloud.netflix.ribbon.RibbonLoadBalancerClient;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -14,6 +16,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("consumer")
+@DefaultProperties(defaultFallback = "fallBackClass")
 public class ConsumerController {
 
     @Autowired
@@ -55,6 +58,39 @@ public class ConsumerController {
         String url="http://user-service/user/"+id;
         User user=restTemplate.getForObject(url,User.class);
         return user;
+    }
+
+
+
+
+    //Hystrix服务降级
+    //默认1秒 便超时
+    @RequestMapping("/hystrix/{id}")
+//    @HystrixCommand(fallbackMethod = "fallBack")
+//    @HystrixCommand(commandProperties = {
+//
+//            @HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds",value = "6000")
+//    })
+    public String queryByIdHystrix(@PathVariable Integer id){
+        String url="http://user-service/user/"+id;
+        String user=restTemplate.getForObject(url,String.class);
+        return user;
+    }
+
+
+    //返回值和参数列表必须完全一样
+    //方法上的返回调用
+    public String fallBack(Integer id){
+
+        return "服务器拥挤";
+    }
+
+
+    //返回值和参数列表必须完全一样
+    //类上的返回调用
+    public String fallBackClass(){
+
+        return "服务器拥挤class";
     }
 
 }
