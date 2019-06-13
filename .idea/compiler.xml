@@ -6,8 +6,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="consumer-server" />
+        <module name="minio" />
         <module name="eureka-server" />
+        <module name="consumer-server" />
         <module name="user-service" />
       </profile>
     </annotationProcessing>
@@ -16,6 +17,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="consumer-server" options="-parameters" />
       <module name="eureka-server" options="-parameters" />
+      <module name="minio" options="-parameters" />
       <module name="user-service" options="-parameters" />
     </option>
   </component>
