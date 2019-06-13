@@ -1,0 +1,37 @@
+server:
+  port: 10010
+zuul:
+  host:
+    socket-timeout-millis: 60000
+    connect-timeout-millis: 60000
+  routes:
+#    配置方法一
+#    服务Id：
+#      path：
+#      url/serviceId
+#    user:
+#      path: /user-service/**
+#      serviceId: user-service
+
+#    简化写法：uservice Id: //映射路径
+    user-service: /user-service/**
+spring:
+  application:
+    name: zuul-service
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:10086/eureka
+    
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 60000
+
+ribbon:
+  ReadTimeout: 60000
+  ConnectTimeout: 60000

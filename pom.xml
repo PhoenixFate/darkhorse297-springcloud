@@ -12,6 +12,7 @@
         <module>consumer-server</module>
         <module>eureka-server</module>
         <module>minio</module>
+        <module>gateway</module>
     </modules>
     <packaging>pom</packaging>
 
