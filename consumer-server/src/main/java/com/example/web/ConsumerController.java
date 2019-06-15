@@ -5,6 +5,7 @@ import com.netflix.hystrix.contrib.javanica.annotation.DefaultProperties;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixProperty;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -21,6 +22,10 @@ public class ConsumerController {
 
     @Autowired
     private RestTemplate restTemplate;
+
+    @Autowired
+    @Qualifier(value = "balance")
+    private RestTemplate restTemplate2;
 
     @Autowired
     private DiscoveryClient discoveryClient;
@@ -56,7 +61,7 @@ public class ConsumerController {
     public User queryByIdWithLoadBalanced(@PathVariable Integer id){
 
         String url="http://user-service/user/"+id;
-        User user=restTemplate.getForObject(url,User.class);
+        User user=restTemplate2.getForObject(url,User.class);
         return user;
     }
 

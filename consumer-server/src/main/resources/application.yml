@@ -14,7 +14,7 @@ spring:
     username: root
     password: 123456
   application:
-    name: consumer-server
+    name: consumer-service
 
 eureka:
   client:

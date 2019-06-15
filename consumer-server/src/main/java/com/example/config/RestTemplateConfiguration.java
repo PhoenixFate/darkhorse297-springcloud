@@ -3,15 +3,28 @@ package com.example.config;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Primary;
 import org.springframework.web.client.RestTemplate;
 
 @Configuration
 public class RestTemplateConfiguration {
 
-    @Bean
+//    @Bean
+//    @LoadBalanced
+//    public RestTemplate getRestTemplate(){
+////		默认空参数的RestTemplate即为HttpUrlConnection
+//        return new RestTemplate();
+//    }
+
     @LoadBalanced
-    public RestTemplate getRestTemplate(){
-//		默认空参数的RestTemplate即为HttpUrlConnection
+    @Bean(name = "balance")
+    RestTemplate loadBalanced() {
+        return new RestTemplate();
+    }
+
+    @Primary
+    @Bean
+    RestTemplate restTemplate() {
         return new RestTemplate();
     }
 }

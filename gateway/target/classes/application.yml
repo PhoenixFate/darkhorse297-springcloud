@@ -13,8 +13,13 @@ zuul:
 #      path: /user-service/**
 #      serviceId: user-service
 
-#    简化写法：uservice Id: //映射路径
+#    简化写法：service Id: //映射路径
+#    这个不写也行，默认zuul就是这么配置的
     user-service: /user-service/**
+  ignored-services:
+    - consumer-service
+#  prefix: zuul
+
 spring:
   application:
     name: zuul-service
@@ -22,7 +27,7 @@ eureka:
   client:
     service-url:
       defaultZone: http://127.0.0.1:10086/eureka
-    
+
 
 hystrix:
   command:
