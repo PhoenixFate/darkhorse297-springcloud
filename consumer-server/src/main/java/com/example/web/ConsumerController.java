@@ -1,5 +1,6 @@
 package com.example.web;
 
+import com.example.Feign.UserClient;
 import com.example.pojo.User;
 import com.netflix.hystrix.contrib.javanica.annotation.DefaultProperties;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
@@ -8,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -76,9 +78,17 @@ public class ConsumerController {
 //
 //            @HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds",value = "6000")
 //    })
+    @HystrixCommand(commandProperties = {
+            @HystrixProperty(name = "circuitBreaker.requestVolumeThreshold",value = "10"),
+            @HystrixProperty(name = "circuitBreaker.sleepWindowInMilliseconds",value = "50000"),
+            @HystrixProperty(name = "circuitBreaker.errorThresholdPercentage",value = "60")
+    })
     public String queryByIdHystrix(@PathVariable Integer id){
+        if(id%2==0){
+            throw new RuntimeException("手动控制");
+        }
         String url="http://user-service/user/"+id;
-        String user=restTemplate.getForObject(url,String.class);
+        String user=restTemplate2.getForObject(url,String.class);
         return user;
     }
 
@@ -97,5 +107,27 @@ public class ConsumerController {
 
         return "服务器拥挤class";
     }
+
+
+
+
+
+    @Autowired
+    private UserClient userClient;
+
+
+    @GetMapping("/feign/{id}")
+    public User queryByFeignClient(@PathVariable Integer id){
+        User user = userClient.queryById(id);
+
+        return user;
+    }
+
+
+
+
+
+
+
 
 }

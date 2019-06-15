@@ -36,3 +36,9 @@ hystrix:
         thread:
          timeoutInMilliseconds: 6000
 
+ribbon:
+  ReadTimeout: 2000
+  ConnectTimeout: 500
+feign:
+  hystrix:
+    enabled: true

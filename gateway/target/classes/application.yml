@@ -2,8 +2,8 @@ server:
   port: 10010
 zuul:
   host:
-    socket-timeout-millis: 60000
-    connect-timeout-millis: 60000
+    socket-timeout-millis: 6000
+    connect-timeout-millis: 6000
   routes:
 #    配置方法一
 #    服务Id：
@@ -35,8 +35,8 @@ hystrix:
       execution:
         isolation:
           thread:
-            timeoutInMilliseconds: 60000
-
+            timeoutInMilliseconds: 6000
+#hystrix.timeout> (ribbon.ReadTimeout+ribbon+ConnectTimeout)*2
 ribbon:
-  ReadTimeout: 60000
-  ConnectTimeout: 60000
+  ReadTimeout: 2000
+  ConnectTimeout: 500
