@@ -3,13 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="ea945319-8fb7-47eb-b15b-d1076afa4c70" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/consumer-server/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer-server/src/main/java/com/example/ConsumerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer-server/src/main/java/com/example/ConsumerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer-server/src/main/java/com/example/web/ConsumerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer-server/src/main/java/com/example/web/ConsumerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/consumer-server/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer-server/target/classes/com/example/web/ConsumerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/consumer-server/target/classes/com/example/web/ConsumerController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/target/classes/com/example/filter/LoginFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/target/classes/com/example/filter/LoginFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/example/web/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/example/web/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/target/classes/com/example/web/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/target/classes/com/example/web/UserController.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -43,33 +38,9 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/consumer-server/src/main/java/com/example/web/ConsumerController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="118">
-              <caret line="119" column="61" lean-forward="true" selection-start-line="119" selection-start-column="61" selection-end-line="119" selection-end-column="61" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/consumer-server/src/main/java/com/example/Feign/UserClient.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="67" selection-start-line="8" selection-start-column="67" selection-end-line="8" selection-end-column="67" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/consumer-server/src/main/java/com/example/Feign/UserClientFallback.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
+            <state relative-caret-position="90">
               <caret line="7" column="31" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -90,7 +61,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/consumer-server/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="388">
+            <state relative-caret-position="645">
               <caret line="43" column="17" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
             </state>
           </provider>
@@ -99,7 +70,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/consumer-server/src/main/java/com/example/ConsumerApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
+            <state relative-caret-position="105">
               <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -108,11 +79,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gateway/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="34" column="16" lean-forward="true" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
+            <state relative-caret-position="420">
+              <caret line="28" column="23" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/user-service/src/main/java/com/example/config/CorsConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" column="9" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -120,8 +103,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gateway/src/main/java/com/example/GatewayApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="8" lean-forward="true" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+            <state relative-caret-position="90">
+              <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -141,10 +124,24 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/user-service/src/main/java/com/example/web/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="21" column="27" selection-start-line="21" selection-end-line="22" />
+            <state relative-caret-position="390">
+              <caret line="26" column="70" selection-start-line="26" selection-start-column="70" selection-end-line="26" selection-end-column="70" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/user-service/src/main/java/com/example/service/UserService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#406#407#0" expanded="true" />
+                <element signature="e#462#463#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -193,7 +190,6 @@
         <option value="$PROJECT_DIR$/user-service/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/eureka-server/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/gateway/src/main/java/com/example/GatewayApplication.java" />
-        <option value="$PROJECT_DIR$/user-service/src/main/java/com/example/web/UserController.java" />
         <option value="$PROJECT_DIR$/consumer-server/src/main/java/com/example/config/RestTemplateConfiguration.java" />
         <option value="$PROJECT_DIR$/gateway/pom.xml" />
         <option value="$PROJECT_DIR$/gateway/src/main/resources/application.yml" />
@@ -205,6 +201,8 @@
         <option value="$PROJECT_DIR$/consumer-server/src/main/java/com/example/Feign/UserClientImpl.java" />
         <option value="$PROJECT_DIR$/consumer-server/src/main/java/com/example/Feign/UserClientFallback.java" />
         <option value="$PROJECT_DIR$/consumer-server/src/main/java/com/example/Feign/UserClient.java" />
+        <option value="$PROJECT_DIR$/user-service/src/main/java/com/example/config/CorsConfig.java" />
+        <option value="$PROJECT_DIR$/user-service/src/main/java/com/example/web/UserController.java" />
       </list>
     </option>
   </component>
@@ -256,25 +254,25 @@
             <path>
               <item name="springboot-springcloud-day01-cloud-demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="springboot-springcloud-day01-cloud-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="consumer-server" type="462c0819:PsiDirectoryNode" />
+              <item name="user-service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springboot-springcloud-day01-cloud-demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="springboot-springcloud-day01-cloud-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="consumer-server" type="462c0819:PsiDirectoryNode" />
+              <item name="user-service" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springboot-springcloud-day01-cloud-demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="springboot-springcloud-day01-cloud-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="consumer-server" type="462c0819:PsiDirectoryNode" />
+              <item name="user-service" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springboot-springcloud-day01-cloud-demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="springboot-springcloud-day01-cloud-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="consumer-server" type="462c0819:PsiDirectoryNode" />
+              <item name="user-service" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -282,7 +280,7 @@
             <path>
               <item name="springboot-springcloud-day01-cloud-demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="springboot-springcloud-day01-cloud-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="consumer-server" type="462c0819:PsiDirectoryNode" />
+              <item name="user-service" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -291,7 +289,7 @@
             <path>
               <item name="springboot-springcloud-day01-cloud-demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="springboot-springcloud-day01-cloud-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="consumer-server" type="462c0819:PsiDirectoryNode" />
+              <item name="user-service" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -301,168 +299,12 @@
             <path>
               <item name="springboot-springcloud-day01-cloud-demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="springboot-springcloud-day01-cloud-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="consumer-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
-              <item name="Feign" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot-springcloud-day01-cloud-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-springcloud-day01-cloud-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="consumer-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
-              <item name="pojo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot-springcloud-day01-cloud-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-springcloud-day01-cloud-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="consumer-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot-springcloud-day01-cloud-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-springcloud-day01-cloud-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="consumer-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot-springcloud-day01-cloud-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-springcloud-day01-cloud-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="consumer-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot-springcloud-day01-cloud-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-springcloud-day01-cloud-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="eureka-server" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot-springcloud-day01-cloud-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-springcloud-day01-cloud-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="eureka-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot-springcloud-day01-cloud-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-springcloud-day01-cloud-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="eureka-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot-springcloud-day01-cloud-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-springcloud-day01-cloud-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="eureka-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot-springcloud-day01-cloud-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-springcloud-day01-cloud-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="gateway" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot-springcloud-day01-cloud-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-springcloud-day01-cloud-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="gateway" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot-springcloud-day01-cloud-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-springcloud-day01-cloud-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="gateway" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot-springcloud-day01-cloud-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-springcloud-day01-cloud-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="gateway" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot-springcloud-day01-cloud-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-springcloud-day01-cloud-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="gateway" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot-springcloud-day01-cloud-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-springcloud-day01-cloud-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="gateway" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
-              <item name="filter" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot-springcloud-day01-cloud-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-springcloud-day01-cloud-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="gateway" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot-springcloud-day01-cloud-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-springcloud-day01-cloud-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="gateway" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot-springcloud-day01-cloud-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-springcloud-day01-cloud-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="user-service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot-springcloud-day01-cloud-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-springcloud-day01-cloud-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="user-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot-springcloud-day01-cloud-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-springcloud-day01-cloud-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="user-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot-springcloud-day01-cloud-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-springcloud-day01-cloud-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="user-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot-springcloud-day01-cloud-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-springcloud-day01-cloud-demo" type="462c0819:PsiDirectoryNode" />
               <item name="user-service" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="example" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springboot-springcloud-day01-cloud-demo" type="b2602c69:ProjectViewProjectNode" />
@@ -473,14 +315,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="example" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot-springcloud-day01-cloud-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-springcloud-day01-cloud-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="user-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -497,7 +331,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560589052066" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560597483576" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -533,7 +367,7 @@
         </RuleState>
       </list>
     </option>
-    <option name="contentProportion" value="0.17577639" />
+    <option name="contentProportion" value="0.16459627" />
   </component>
   <component name="RunManager" selected="Spring Boot.GatewayApplication">
     <configuration name="HttpConsumerApplicationTests.httpGet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
@@ -637,10 +471,10 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.ConsumerApplication" />
-        <item itemvalue="Spring Boot.UserApplication" />
-        <item itemvalue="Spring Boot.GatewayApplication" />
         <item itemvalue="Spring Boot.EurekaServer" />
+        <item itemvalue="Spring Boot.UserApplication" />
+        <item itemvalue="Spring Boot.ConsumerApplication" />
+        <item itemvalue="Spring Boot.GatewayApplication" />
         <item itemvalue="JUnit.HttpConsumerApplicationTests.httpGet" />
       </list>
     </recent_temporary>
@@ -662,7 +496,9 @@
       <workItem from="1560092573689" duration="481000" />
       <workItem from="1560174562472" duration="2475000" />
       <workItem from="1560516295426" duration="5198000" />
-      <workItem from="1560582220427" duration="3251000" />
+      <workItem from="1560582220427" duration="3787000" />
+      <workItem from="1560592668901" duration="1930000" />
+      <workItem from="1560599832498" duration="767000" />
     </task>
     <servers />
   </component>
@@ -678,7 +514,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28856000" />
+    <option name="totallyTimeSpent" value="32089000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -690,10 +526,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="23" width="1680" height="961" extended-state="6" />
+    <frame x="0" y="23" width="1680" height="961" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2973138" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21184371" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -716,7 +552,7 @@
       <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.32911393" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
       <window_info anchor="bottom" id="Version Control" order="14" weight="0.23590334" />
-      <window_info anchor="bottom" id="Run Dashboard" order="15" visible="true" weight="0.4649022" />
+      <window_info anchor="bottom" id="Run Dashboard" order="15" visible="true" weight="0.45454547" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24969475" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -782,16 +618,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user-service/src/main/java/com/example/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1188,10 +1014,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user-service/src/main/java/com/example/web/UserController.java">
+    <entry file="file://$PROJECT_DIR$/consumer-server/src/main/java/com/example/web/ConsumerController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="21" column="27" selection-start-line="21" selection-end-line="22" />
+        <state relative-caret-position="1560">
+          <caret line="119" column="61" selection-start-line="119" selection-start-column="61" selection-end-line="119" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consumer-server/src/main/java/com/example/Feign/UserClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="8" column="67" selection-start-line="8" selection-start-column="67" selection-end-line="8" selection-end-column="67" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consumer-server/src/main/java/com/example/Feign/UserClientFallback.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="7" column="31" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1205,9 +1051,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/consumer-server/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="43" column="17" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/consumer-server/src/main/java/com/example/ConsumerApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
+        <state relative-caret-position="105">
           <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1215,27 +1068,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/consumer-server/src/main/java/com/example/web/ConsumerController.java">
+    <entry file="file://$PROJECT_DIR$/gateway/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="119" column="61" lean-forward="true" selection-start-line="119" selection-start-column="61" selection-end-line="119" selection-end-column="61" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/consumer-server/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="43" column="17" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
+        <state relative-caret-position="420">
+          <caret line="28" column="23" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gateway/src/main/java/com/example/GatewayApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="8" lean-forward="true" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+        <state relative-caret-position="90">
+          <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1249,30 +1092,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/consumer-server/src/main/java/com/example/Feign/UserClientFallback.java">
+    <entry file="file://$PROJECT_DIR$/user-service/src/main/java/com/example/service/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="31" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="31" />
+        <state relative-caret-position="165">
+          <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#406#407#0" expanded="true" />
+            <element signature="e#462#463#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-service/src/main/java/com/example/web/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="70" selection-start-line="26" selection-start-column="70" selection-end-line="26" selection-end-column="70" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/consumer-server/src/main/java/com/example/Feign/UserClient.java">
+    <entry file="file://$PROJECT_DIR$/user-service/src/main/java/com/example/config/CorsConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="67" selection-start-line="8" selection-start-column="67" selection-end-line="8" selection-end-column="67" />
+        <state relative-caret-position="270">
+          <caret line="18" column="9" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gateway/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" column="16" lean-forward="true" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
         </state>
       </provider>
     </entry>
