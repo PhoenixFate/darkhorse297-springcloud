@@ -14,7 +14,7 @@ spring:
     password: 123456
 #    url: jdbc:mysql://112.86.147.133:3322/hospital_online_admin?useSSL=false&allowMultiQueries=true&serverTimezone=GMT&autoReconnect=true&failOverReadOnly=false
 #    username: root
-#    password: njzhyl123qwer
+#    password: njzhyl123qwerz
   application:
     name: user-service
 #    type: com.zaxxer.hikari.HikariDataSource
@@ -26,6 +26,8 @@ eureka:
   instance:
     lease-renewal-interval-in-seconds: 30
     lease-expiration-duration-in-seconds: 90
+
+
 mybatis:
   #  通用mapper自动开启驼峰
   #  configuration:
