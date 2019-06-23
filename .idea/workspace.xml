@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ea945319-8fb7-47eb-b15b-d1076afa4c70" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/example/web/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/example/web/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/target/classes/com/example/web/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/target/classes/com/example/web/UserController.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -91,8 +89,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/user-service/src/main/java/com/example/config/CorsConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="9" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+            <state relative-caret-position="150">
+              <caret line="10" column="45" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -124,7 +122,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/user-service/src/main/java/com/example/web/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
+            <state relative-caret-position="345">
               <caret line="26" column="70" selection-start-line="26" selection-start-column="70" selection-end-line="26" selection-end-column="70" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -230,8 +228,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-6" />
-    <option name="y" value="23" />
+    <option name="x" value="-2" />
+    <option name="y" value="24" />
     <option name="width" value="1680" />
     <option name="height" value="961" />
   </component>
@@ -250,71 +248,6 @@
             <path>
               <item name="springboot-springcloud-day01-cloud-demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="springboot-springcloud-day01-cloud-demo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot-springcloud-day01-cloud-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-springcloud-day01-cloud-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="user-service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot-springcloud-day01-cloud-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-springcloud-day01-cloud-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="user-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot-springcloud-day01-cloud-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-springcloud-day01-cloud-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="user-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot-springcloud-day01-cloud-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-springcloud-day01-cloud-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="user-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot-springcloud-day01-cloud-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-springcloud-day01-cloud-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="user-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot-springcloud-day01-cloud-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-springcloud-day01-cloud-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="user-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot-springcloud-day01-cloud-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-springcloud-day01-cloud-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="user-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot-springcloud-day01-cloud-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-springcloud-day01-cloud-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="user-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -498,7 +431,9 @@
       <workItem from="1560516295426" duration="5198000" />
       <workItem from="1560582220427" duration="3787000" />
       <workItem from="1560592668901" duration="1930000" />
-      <workItem from="1560599832498" duration="767000" />
+      <workItem from="1560599832498" duration="1580000" />
+      <workItem from="1560666442267" duration="16000" />
+      <workItem from="1561034795032" duration="613000" />
     </task>
     <servers />
   </component>
@@ -514,7 +449,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32089000" />
+    <option name="totallyTimeSpent" value="33531000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -527,9 +462,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="961" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21184371" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21672772" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -545,14 +479,14 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32911393" />
       <window_info anchor="bottom" id="Spring" order="7" weight="0.32911393" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.39470655" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.39470655" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.32911393" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
       <window_info anchor="bottom" id="Version Control" order="14" weight="0.23590334" />
-      <window_info anchor="bottom" id="Run Dashboard" order="15" visible="true" weight="0.45454547" />
+      <window_info anchor="bottom" id="Run Dashboard" order="15" weight="0.45454547" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24969475" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -1092,6 +1026,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/user-service/src/main/java/com/example/web/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="26" column="70" selection-start-line="26" selection-start-column="70" selection-end-line="26" selection-end-column="70" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/user-service/src/main/java/com/example/service/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -1104,20 +1048,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user-service/src/main/java/com/example/web/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="70" selection-start-line="26" selection-start-column="70" selection-end-line="26" selection-end-column="70" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/user-service/src/main/java/com/example/config/CorsConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="9" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+        <state relative-caret-position="150">
+          <caret line="10" column="45" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
