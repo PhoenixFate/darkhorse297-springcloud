@@ -6,11 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="consumer-server" />
-        <module name="eureka-server" />
+        <module name="redis" />
         <module name="gateway" />
         <module name="minio" />
+        <module name="consumer-server" />
         <module name="user-service" />
+        <module name="eureka-server" />
+        <module name="mybatis-plus-demo" />
       </profile>
     </annotationProcessing>
   </component>
@@ -20,6 +22,8 @@
       <module name="eureka-server" options="-parameters" />
       <module name="gateway" options="-parameters" />
       <module name="minio" options="-parameters" />
+      <module name="mybatis-plus-demo" options="-parameters" />
+      <module name="redis" options="-parameters" />
       <module name="user-service" options="-parameters" />
     </option>
   </component>

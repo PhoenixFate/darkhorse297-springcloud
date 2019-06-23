@@ -13,6 +13,7 @@
         <module>eureka-server</module>
         <module>minio</module>
         <module>gateway</module>
+        <module>redis</module>
     </modules>
     <packaging>pom</packaging>
 

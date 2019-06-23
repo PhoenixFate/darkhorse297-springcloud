@@ -9,9 +9,12 @@ logging:
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://127.0.0.1:3306/pigxx
+    url: jdbc:mysql://47.99.113.229:3306/pigxx
     username: root
     password: 123456
+#    url: jdbc:mysql://112.86.147.133:3322/hospital_online_admin?useSSL=false&allowMultiQueries=true&serverTimezone=GMT&autoReconnect=true&failOverReadOnly=false
+#    username: root
+#    password: njzhyl123qwer
   application:
     name: user-service
 #    type: com.zaxxer.hikari.HikariDataSource
