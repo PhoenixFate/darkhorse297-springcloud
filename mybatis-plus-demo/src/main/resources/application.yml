@@ -1,0 +1,16 @@
+server:
+  port: 10096
+  servlet:
+    context-path: /
+
+logging:
+  level:
+    com.example: debug
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://47.99.113.229:3306/pigxx
+    username: root
+    password: 123456
+  application:
+    name: user-service

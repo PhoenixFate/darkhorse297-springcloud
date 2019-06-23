@@ -1,5 +1,5 @@
 server:
-  port: 8081
+  port: 8089
   servlet:
     context-path: /
 
@@ -14,9 +14,9 @@ spring:
     password: 123456
 #    url: jdbc:mysql://112.86.147.133:3322/hospital_online_admin?useSSL=false&allowMultiQueries=true&serverTimezone=GMT&autoReconnect=true&failOverReadOnly=false
 #    username: root
-#    password: njzhyl123qwer
+#    password: njzhyl123qwerz
   application:
-    name: user-service
+    name: redis-service
 #    type: com.zaxxer.hikari.HikariDataSource
 
 eureka:
