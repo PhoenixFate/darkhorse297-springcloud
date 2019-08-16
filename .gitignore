@@ -9,4 +9,4 @@ minio/target/
 mybatis-plus-demo/target/
 quartz-test/target/
 redis/target/
-user-server/target/
+user-service/target/
