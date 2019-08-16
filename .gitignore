@@ -1,2 +1,12 @@
 .idea
+*.iml
 .git
+consumer-server/target/
+different-json/target/
+eureka-server/target/
+gateway/target/
+minio/target/
+mybatis-plus-demo/target/
+quartz-test/target/
+redis/target/
+user-server/target/
