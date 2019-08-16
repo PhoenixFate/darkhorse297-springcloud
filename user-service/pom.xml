@@ -47,6 +47,13 @@
             <version>2.6.1</version>
         </dependency>
         <!-- Swagger核心包 end -->
+
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-mongodb</artifactId>
+        </dependency>
+
     </dependencies>
 
 

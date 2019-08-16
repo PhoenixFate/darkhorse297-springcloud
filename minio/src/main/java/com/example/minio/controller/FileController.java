@@ -40,7 +40,7 @@ public class FileController {
 		Map<String, String> resultMap = new HashMap<>(4);
 		resultMap.put("bucketName", CommonConstants.BUCKET_NAME);
 		resultMap.put("fileName", fileName);
-		resultMap.put("path", "/admin/file/" + CommonConstants.BUCKET_NAME + "-" + fileName);
+		resultMap.put("path", "/file/" + CommonConstants.BUCKET_NAME + "-" + fileName);
 		try {
 			minioTemplate.putObject(CommonConstants.BUCKET_NAME, fileName, file.getInputStream());
 		} catch (Exception e) {
@@ -49,29 +49,6 @@ public class FileController {
 					.msg(e.getLocalizedMessage()).build();
 		}
 		return R.builder().data(resultMap).build();
-	}
-
-	/**
-	 * 上传文件新版 适配 avue
-	 * 文件名采用uuid,避免原始文件名中带"-"符号导致下载的时候解析出现异常
-	 *
-	 * @param file 资源
-	 * @return R(bucketName, filename)
-	 */
-	@PostMapping("/uploadNew")
-	public Map<String, String> uploadNew(@RequestParam("file") MultipartFile file) {
-		String fileName = IdUtil.simpleUUID() + StrUtil.DOT + FileUtil.extName(file.getOriginalFilename());
-		Map<String, String> resultMap = new HashMap<>(4);
-		resultMap.put("bucketName", CommonConstants.BUCKET_NAME);
-		resultMap.put("fileName", fileName);
-		resultMap.put("path", "/admin/file/" + CommonConstants.BUCKET_NAME + "-" + fileName);
-
-		try {
-			minioTemplate.putObject(CommonConstants.BUCKET_NAME, fileName, file.getInputStream());
-		} catch (Exception e) {
-			log.error("上传失败", e);
-		}
-		return resultMap;
 	}
 
 

@@ -6,12 +6,21 @@ server:
 logging:
   level:
     com.example: debug
+
+
 spring:
+  data:
+    mongodb:
+      uri: mongodb://root:root@112.86.147.133:27022/
+      database: sbpt_taikang_log
+      authentication-database: admin
+#    mongodb:
+#      uri: mongodb://root:root@112.86.147.133:27022/sbpt_taikang_log
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://47.99.113.229:3306/pigxx
-    username: root
-    password: 123456
+    url: jdbc:mysql://112.86.147.133:3322/coupon
+    username: tangwei
+    password: qwer123
 #    url: jdbc:mysql://112.86.147.133:3322/hospital_online_admin?useSSL=false&allowMultiQueries=true&serverTimezone=GMT&autoReconnect=true&failOverReadOnly=false
 #    username: root
 #    password: njzhyl123qwerz

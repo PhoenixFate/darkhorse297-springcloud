@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("user")
-@Api(value = "eureka-provider", description = "用户查询接口")
+@Api(tags = "用户相关接口")
 public class UserController {
 
     @Autowired
