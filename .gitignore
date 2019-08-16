@@ -1,6 +1,7 @@
 .idea
 *.iml
 .git
+null
 consumer-server/target/
 different-json/target/
 eureka-server/target/
