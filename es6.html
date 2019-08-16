@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ES6</title>
+</head>
+<body>
+<script>
+    for(var i=0;i<5;i++){
+        console.log(i)
+    }
+    console.log(i)
+    //es6中使用let 和 const来定义变量
+    let j=20;
+    const s=10;
+
+
+//    解构表达式
+    let arr=[2,4,5,623]
+    let [x,y]=arr;
+    console.log("x: "+x);
+    console.log("y: "+y);
+    let [,,a,b]=arr;
+    console.log("a: "+a);
+    console.log("b: "+b);
+//    除了第一个其他都要
+    let [,...rest]=arr;
+    console.log(rest);
+//    解析对象：
+    let p={name:"jack",age:20}
+    let {name,age}=p;
+    console.log("name: "+name);
+    console.log("age: "+age);
+    let {name:n,age:aa}=p;
+    console.log("n: "+n);
+    console.log("aa: "+aa);
+    let pp={name:"jack",age:30,girl:{name:"rose",age:32}}
+    let {girl:{name:gname}}=pp;
+    console.log("gname: "+gname);
+    let {...obj}=p;
+    console.log(obj);
+    console.log(obj==p);
+
+    function sum(a,b){
+        return a+b;
+    }
+
+    const add=(a,b)=>a+b;
+    console.log("add(1,2): "+add(2,4));
+
+    const person={
+        name:"jack",
+        age:20,
+        sayHello() {
+            console.log("hello")
+        }
+    }
+    person.sayHello();
+    const hello=function(person){
+     }
+    hello(person);
+    const hello2=({name,age})=>{
+        console.log(name,age)
+    }
+    hello2(person);
+
+    let arr2=['2','4','6'];
+    let arr3=arr2.map(item=>{
+        return parseInt(item)
+    });
+    console.log(arr2)
+    console.log(arr3)
+    let arr4=arr3.reduce((a,b)=>a+b);
+    console.log(arr4)
+</script>
+</body>
+</html>
