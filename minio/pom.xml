@@ -3,9 +3,9 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>springboot-springcloud-day01-cloud-demo</artifactId>
-        <groupId>com.example</groupId>
-        <version>1.0.0-SNAPSHOT</version>
+        <groupId>com.bytesRoom</groupId>
+        <artifactId>darkhorse297-springcloud</artifactId>
+        <version>1.0.0</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
@@ -15,8 +15,6 @@
     <description>minIO</description>
 
     <dependencies>
-
-
         <!--web 模块-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -58,10 +56,10 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
-            <plugin>
-                <groupId>com.spotify</groupId>
-                <artifactId>docker-maven-plugin</artifactId>
-            </plugin>
+<!--            <plugin>-->
+<!--                <groupId>com.spotify</groupId>-->
+<!--                <artifactId>docker-maven-plugin</artifactId>-->
+<!--            </plugin>-->
         </plugins>
     </build>
 

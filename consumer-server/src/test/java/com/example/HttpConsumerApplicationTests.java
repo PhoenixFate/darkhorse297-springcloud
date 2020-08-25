@@ -18,8 +18,8 @@ public class HttpConsumerApplicationTests {
 
 	@Test
 	public void httpGet() {
-		User user = restTemplate.getForObject("http://localhost:8081/user/1", User.class);
-		System.out.println(user);
+		// User user = restTemplate.getForObject("http://localhost:8081/user/1", User.class);
+		// System.out.println(user);
 	}
 
 }

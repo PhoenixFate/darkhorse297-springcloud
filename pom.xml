@@ -4,9 +4,9 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.example</groupId>
-    <artifactId>springboot-springcloud-day01-cloud-demo</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <groupId>com.bytesRoom</groupId>
+    <artifactId>darkhorse297-springcloud</artifactId>
+    <version>1.0.0</version>
     <modules>
         <module>user-service</module>
         <module>consumer-server</module>
@@ -17,6 +17,7 @@
         <module>redis</module>
         <module>different-json</module>
         <module>quartz-test</module>
+        <module>eureka-server2</module>
     </modules>
     <packaging>pom</packaging>
 

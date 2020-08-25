@@ -4,6 +4,9 @@ zuul:
   host:
     socket-timeout-millis: 6000
     connect-timeout-millis: 6000
+
+  # 全局的前缀
+  prefix: /v1
   routes:
 #    配置方法一
 #    服务Id：
@@ -12,13 +15,23 @@ zuul:
 #    user:
 #      path: /user-service/**
 #      serviceId: user-service
-
 #    简化写法：service Id: //映射路径
 #    这个不写也行，默认zuul就是这么配置的
     user-service: /user-service/**
-  ignored-services:
-    - consumer-service
-#  prefix: zuul
+
+
+    # 我希望通过访问localhost:10010/user/1 来访问8090/user/1
+#    user-service:
+#      path: /user/**
+#      serviceId: user-service
+#      strip-prefix: false  # 默认是true
+
+  #strip-prefix: false #全局去除前缀
+
+
+#  ignored-services:
+#    - consumer-service
+
 
 spring:
   application:
@@ -26,7 +39,7 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://127.0.0.1:10086/eureka
+      defaultZone: http://127.0.0.1:10086/eureka,http://127.0.0.1:10087/eureka
 
 
 hystrix:
@@ -35,8 +48,13 @@ hystrix:
       execution:
         isolation:
           thread:
-            timeoutInMilliseconds: 6000
-#hystrix.timeout> (ribbon.ReadTimeout+ribbon+ConnectTimeout)*2
+            timeoutInMilliseconds: 10000
+
+# maxAutoRetries 默认为0    maxAutoRetriesNextServer默认为1
+# 	hystrix.timeout	>	ribbonTimeout = (ribbonReadTimeout + ribbonConnectTimeout) * (maxAutoRetries + 1) * (maxAutoRetriesNextServer + 1);
 ribbon:
-  ReadTimeout: 2000
-  ConnectTimeout: 500
+  ReadTimeout: 3000
+  ConnectTimeout: 1000
+  OkToRetryOnAllOperations: true # 是否对所有操作重试
+  MaxAutoRetriesNextServer: 1 # 同一服务不同实例的重试次数 默认1
+  MaxAutoRetries: 0 # 同一实例的重试次数 m默认0

@@ -1,4 +1,4 @@
-package com.example.Feign;
+package com.example.feign;
 
 
 import com.example.pojo.User;
