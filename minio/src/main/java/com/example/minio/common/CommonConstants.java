@@ -61,5 +61,5 @@ public interface CommonConstants {
 	/**
 	 * 默认存储bucket
 	 */
-	String BUCKET_NAME = "njzhyl";
+	String BUCKET_NAME = "phoenix";
 }
