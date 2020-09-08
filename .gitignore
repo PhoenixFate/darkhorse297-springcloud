@@ -2,6 +2,7 @@
 *.iml
 .git
 null
+target
 consumer-server/target/
 different-json/target/
 eureka-server/target/

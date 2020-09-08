@@ -1,0 +1,13 @@
+
+
+# 阿里云 oss储存服务
+aliyun:
+    oss:
+        # address为bucket的地址，用来获取图片上传后的图片地址，以便之后访问
+        address: https://bytes-space-test.oss-cn-hangzhou.aliyuncs.com
+        end-point: oss-cn-hangzhou.aliyuncs.com
+        access-key: LTAI4GE4b3Yxv7TQoD4HtWEy
+        secret-key: AVUwVpMLWtEDaA8eDm8LLMcTRruqZ1
+        bucket: bytes-space-test
+        file-path: images
+

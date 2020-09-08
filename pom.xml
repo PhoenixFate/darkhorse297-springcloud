@@ -18,6 +18,7 @@
         <module>different-json</module>
         <module>quartz-test</module>
         <module>eureka-server2</module>
+        <module>oss</module>
     </modules>
     <packaging>pom</packaging>
 
